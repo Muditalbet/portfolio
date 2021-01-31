@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.main{
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: blue;
+}
+.animation{
+    position: absolute;
+    background-color: transparent;
+    margin: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+}
+.animation .bar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    width: 0.3%;
+    border-radius: 3px;
+    background-color: rgb(255, 102, 0);
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: bar-animation 2s linear;
+}
+/* @keyframes bar-animation{
+    0%{
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%, -50%) rotate(180deg);
+    }
+} */
